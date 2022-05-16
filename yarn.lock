@@ -1292,6 +1292,7 @@ __metadata:
     "@emotion/styled": ^11.8.1
     "@mui/material": ^5.7.0
     "@nlpdev/database": "workspace:^"
+    async-call-rpc: ^6.0.2
     parcel: ^2.5.0
     react: ^18.1.0
     react-dom: ^18.1.0
@@ -2913,6 +2914,13 @@ __metadata:
   version: 1.0.1
   resolution: "arrify@npm:1.0.1"
   checksum: 745075dd4a4624ff0225c331dacb99be501a515d39bcb7c84d24660314a6ec28e68131b137e6f7e16318170842ce97538cd298fc4cd6b2cc798e0b957f2747e7
+  languageName: node
+  linkType: hard
+
+"async-call-rpc@npm:^6.0.2":
+  version: 6.0.2
+  resolution: "async-call-rpc@npm:6.0.2"
+  checksum: a891556f0505427836306e5f8fab399dac6976f4d8bb62cb71d058326a5c92570a5fbb8675972383423644dac5146f84ab2667d6654e328f1331a5ed62e15fc3
   languageName: node
   linkType: hard
 

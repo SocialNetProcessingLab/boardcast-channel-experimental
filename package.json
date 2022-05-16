@@ -1,0 +1,56 @@
+{
+  "name": "fe-template",
+  "packageManager": "yarn@3.2.0",
+  "workspaces": [
+    "packages/fe",
+    "packages/database"
+  ],
+  "engines": {
+    "node": "^16"
+  },
+  "scripts": {
+    "tsc": "tsc -b",
+    "tsc:watch": "tsc -b --watch",
+    "run": "echo nothing for now",
+    "build": "echo nothing for now",
+    "lint": "eslint -c .eslintrc.js packages --ext .ts,.tsx,.js --cache --fix",
+    "test": "jest",
+    "preinstall": "npx only-allow yarn",
+    "postinstall": "husky install"
+  },
+  "lint-staged": {
+    "*.{!ts,tsx,js,jsx}": "prettier --write --ignore-unknown",
+    "*.{ts,tsx,js,jsx}": "eslint -c .eslintrc.js --cache --fix"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@testing-library/dom": "^8.13.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^14.1.1",
+    "@types/jest": "^27.5.0",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.3",
+    "@types/web": "^0.0.64",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint": "^8.15.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.1",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
+    "prettier": "^2.6.2",
+    "ts-jest": "^28.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
